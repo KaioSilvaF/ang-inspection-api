@@ -1,0 +1,24 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+#add-success-alert,
+#update-success-alert,
+#delete-success-alert{
+  display: none;
+}
+
+#add-success-alert,
+#update-success-alert,
+#delete-success-alert{
+  animation-name:fade;
+  animation-duration: 4s;
+}
+@keyframes fade {
+  0%{opacity: 0;}
+  50%{opacity: 1;}
+  100%{opacity: 0;}
+}
+
+@-webkit-keyframes fade {
+  0%{opacity: 0;}
+  50%{opacity: 1;}
+  100%{opacity: 0;}
+}
