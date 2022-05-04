@@ -6,6 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class InspectionApiService {
+  //API ConnectionString
   readonly inspectionAPIUrl ="https://localhost:7142/api";
 
   constructor(private http:HttpClient) {}
@@ -27,7 +28,7 @@ export class InspectionApiService {
     deleteInspection(id:number|string){
       return this.http.delete(this.inspectionAPIUrl+'/inspections/'+id);
     }
-  
+
   //METHODS FOR INSPECTION TYPE
     //GET
     getInspectionTypeList():Observable<any[]>{
